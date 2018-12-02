@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<body>
 <!-- This file is called from the root -->
 
 <h1>page.php file</h1>
@@ -13,6 +12,5 @@
 ?>
 
   
-</body>
 
 <?php get_footer(); ?>

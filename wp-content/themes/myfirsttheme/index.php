@@ -1,8 +1,5 @@
 <?php get_header(); ?>
-
-<body>
 <!-- This file is called from the root -->
-
 <h1>index.php file</h1>
 
 <?php
@@ -14,8 +11,5 @@
   //  get_template_part('partials/post', get_post_format()) ;
   // }
 ?>
-
-  
-</body>
 
 <?php get_footer(); ?>

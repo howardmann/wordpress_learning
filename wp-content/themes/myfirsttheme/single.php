@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<body>
 <!-- This file is called from a single post -->
 
 <h1>single.php file</h1>
@@ -13,5 +12,4 @@
 ?>
 
   
-</body>
 <?php get_footer(); ?>
