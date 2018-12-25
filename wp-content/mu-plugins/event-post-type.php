@@ -20,6 +20,6 @@
       // Dashicons list can be found here: https://developer.wordpress.org/resource/dashicons/#controls-volumeon
     ));
   };
-  add_action('init', 'event_post_type')
+  add_action('init', 'event_post_type');
 
 ?>
