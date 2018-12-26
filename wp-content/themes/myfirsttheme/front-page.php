@@ -5,7 +5,7 @@
 
 <h1>front-page.php file</h1>
 
-<p>This is the static home page</p>
+<p>This is the static <?php echo upperCase('home page') ?></p>
 <p><a href="/blog">View all posts</a></p>
 <p><a href="/new-events">View all events</a></p>
 
