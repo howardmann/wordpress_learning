@@ -1,6 +1,6 @@
 # Custom Theme
 
-A theme is where you include all your stylesheets, script files, templates and functions. Here is an example boilerplate for creating your own theme:
+A theme is where you include all your stylesheets, script files, templates and functions. Here is an example boilerplate for creating your own theme. Once your theme has been created you will need to go into the WP dashboard, select Appearance and activate your custom theme.
 ```bash
 myfirsttheme
   L index.php // root template page that will be rendered (naming important)
