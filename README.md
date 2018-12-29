@@ -1,6 +1,7 @@
 # Wordpress Tips
 
-1. [Custom Post Types and Custom Fields](custom-post-types.md)
-2. [Relationships](relationships.md)
-3. [Helper Functions](helper-functions.md)
-4. [Custom ˇemplates](custom-templates.md)
+1. [Custom Theme](custom-theme.md)
+2. [Custom Post Types and Custom Fields](custom-post-types.md)
+3. [Relationships](relationships.md)
+4. [Helper Functions](helper-functions.md)
+5. [Custom Templates](custom-templates.md)
