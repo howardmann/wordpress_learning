@@ -28,7 +28,19 @@
 
   add_shortcode('greetingName', 'sayHelloName');
 
+  function renderChecklists() {
+    $checklists = new WP_Query(array(
+      'posts_per_page' => 10,
+      'post_type' => 'checklist'
+    ));
 
+    while($checklists->have_posts()) {
+      $checklists->the_post(); 
+      get_template_part('partials/checklist/index', get_post_format()) ;
+    }
+  }
+
+  add_shortcode('renderChecklists', 'renderChecklists');
 
   // We move this code to a new folder ./mu-plugins/event-post-type.php
   // We do this to protect the content type when the theme is changed
