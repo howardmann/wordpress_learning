@@ -28,32 +28,7 @@
 
   add_shortcode('greetingName', 'sayHelloName');
 
-  function renderChecklists() {
-    $checklists = new WP_Query(array(
-      'posts_per_page' => 10,
-      'post_type' => 'checklist'
-    ));
+  // Separate your functions into modular functions for control
+  require_once( __DIR__ . '/includes/render-checklists.php');
 
-    while($checklists->have_posts()) {
-      $checklists->the_post(); 
-      get_template_part('partials/checklist/index', get_post_format()) ;
-    }
-  }
-
-  add_shortcode('renderChecklists', 'renderChecklists');
-
-  // We move this code to a new folder ./mu-plugins/event-post-type.php
-  // We do this to protect the content type when the theme is changed
-  // Create custom post type
-  // function event_post_type() {
-  //   register_post_type('event', array(
-  //     'public' => true,
-  //     'labels' => array(
-  //       'name' => 'Events'
-  //     ),
-  //     'menu_icon' => 'dashicons-calendar'
-  //     // Dashicons list can be found here: https://developer.wordpress.org/resource/dashicons/#controls-volumeon
-  //   ));
-  // };
-  // add_action('init', 'event_post_type')
 ?>
